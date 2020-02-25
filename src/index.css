@@ -4,6 +4,7 @@
     rgba(177, 127, 248, 1) 35%,
     rgba(91, 94, 233, 1) 100%
   );
+  --background-light: #f8f8fa;
 
   --primary: #9b7aff;
   --secondary: #797cef;
