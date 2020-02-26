@@ -18,7 +18,7 @@ const Heading = ({
           roundWrapper: round,
           roundReverseWrapper: roundReverse
         },
-        { className }
+        className
       )}
       style={{ height: height ?? '' }}
     >
