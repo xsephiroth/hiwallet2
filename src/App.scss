@@ -2,3 +2,12 @@
   height: 100vh;
   background-color: var(--grey-light);
 }
+
+.fallback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--background);
+  color: #fff;
+}
