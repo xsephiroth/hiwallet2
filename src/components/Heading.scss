@@ -1,0 +1,44 @@
+.heading {
+  height: 25%;
+  position: relative;
+  overflow: hidden;
+
+  background: var(--background);
+  &.roundWrapper {
+    background: var(--grey-light);
+    background: transparent;
+  }
+
+  &.roundReverseWrapper {
+    height: 30%;
+  }
+
+  .round {
+    position: absolute;
+    background: var(--background);
+    width: 130%;
+    height: 130%;
+    transform: translateX(-11.5%);
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+  }
+
+  .roundReverse {
+    position: absolute;
+    background: var(--grey-light);
+    width: 130%;
+    height: 130%;
+    transform: translate(-11.5%, 58%);
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+  }
+
+  .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
