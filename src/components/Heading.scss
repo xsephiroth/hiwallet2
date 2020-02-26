@@ -2,6 +2,7 @@
   height: 25%;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 
   background: var(--background);
   &.roundWrapper {
