@@ -10,8 +10,20 @@ const Activity = () => {
   return (
     <Card className="Home__Activity">
       <div className="Home__Activity__Balance">
-        <h2>Spent</h2>
-        <h2>Earn</h2>
+        <div className="Home__Activity__Balance__Info">
+          <label className="circle expense" />
+          <div className="text">
+            <p>支出</p>
+            <h3>12345.67</h3>
+          </div>
+        </div>
+        <div className="Home__Activity__Balance__Info">
+          <label className="circle income" />
+          <div className="text">
+            <p>收入</p>
+            <h3>12345.67</h3>
+          </div>
+        </div>
       </div>
       <div className="Home__Activity__Buttons">
         <ActivityButton icon="plus-square" text="记账" />

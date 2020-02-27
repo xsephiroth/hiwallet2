@@ -23,6 +23,48 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 1em;
+
+    &__Balance {
+      &__Info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .circle {
+          --size: 0.7em;
+
+          display: block;
+          width: var(--size);
+          height: var(--size);
+          border-radius: 50%;
+          margin-right: 0.8em;
+
+          &.expense {
+            background-color: #f76464;
+          }
+
+          &.income {
+            background-color: var(--primary);
+          }
+        }
+
+        .text {
+          overflow: hidden;
+
+          p {
+            color: var(--text-secondary);
+            font-size: 0.8em;
+          }
+
+          h3 {
+            font-weight: 400;
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
   }
 
   .Home__PaymentHistoryList {
