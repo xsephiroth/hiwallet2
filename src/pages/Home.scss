@@ -1,10 +1,11 @@
 .Home {
-  height: 100vh;
   min-height: 100vh;
 
   &__Heading {
     height: 200px;
     color: #fff;
+    position: sticky;
+    top: 0;
 
     .content {
       height: 60%;
@@ -16,5 +17,14 @@
 
   &__Balance {
     margin-top: -70px;
+    position: sticky;
+    top: 1em;
+  }
+
+  .Home__PaymentHistoryList {
+    .List__Item {
+      position: sticky;
+      top: 10em;
+    }
   }
 }
