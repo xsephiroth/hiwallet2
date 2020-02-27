@@ -1,0 +1,57 @@
+.PaymentItem {
+  display: grid;
+  grid-template-columns: 2fr 5fr 5fr;
+  align-items: center;
+  border-radius: 4px;
+
+  background-color: #fff;
+  padding: 1em;
+
+  &__Date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: start;
+
+    .month {
+      color: var(--text-secondary);
+      font-weight: 300;
+    }
+
+    .day {
+      color: var(--text-primary);
+    }
+  }
+
+  &__Info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &__Category {
+      display: flex;
+      align-items: flex-end;
+
+      .main {
+        color: var(--text-primary);
+        margin-right: 5px;
+      }
+
+      .sub {
+        color: var(--text-secondary);
+        font-weight: 300;
+      }
+    }
+
+    &__Note {
+      margin-top: 0.3em;
+      color: var(--text-secondary);
+      font-size: 0.7em;
+    }
+  }
+
+  &__Amount {
+    justify-self: flex-end;
+  }
+}
