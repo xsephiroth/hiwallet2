@@ -1,0 +1,18 @@
+.List {
+  margin: 1.3em;
+  list-style: none;
+
+  &__Item {
+    .border {
+      margin-left: 1em;
+      margin-right: 1em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &:last-child {
+      .border {
+        border-bottom: none;
+      }
+    }
+  }
+}
