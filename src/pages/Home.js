@@ -1,15 +1,23 @@
 import React from 'react';
 import Heading from '../components/Heading';
 import Card from '../components/Card';
+import ActivityButton from '../components/ActivityButton';
 import List from '../components/List';
 import PaymentItem from '../components/PaymentItem';
 import './Home.scss';
 
-const Balance = () => {
+const Activity = () => {
   return (
-    <Card className="Home__Balance">
-      <h1>Spent</h1>
-      <h1>Earn</h1>
+    <Card className="Home__Activity">
+      <div className="Home__Activity__Balance">
+        <h2>Spent</h2>
+        <h2>Earn</h2>
+      </div>
+      <div className="Home__Activity__Buttons">
+        <ActivityButton icon="plus-square" text="记账" />
+        <ActivityButton icon="chart-bar" text="分析" />
+        <ActivityButton icon="cog" text="管理" />
+      </div>
     </Card>
   );
 };
@@ -131,7 +139,7 @@ const Home = () => {
       <Heading className="Home__Heading" round>
         <h1>Some heading</h1>
       </Heading>
-      <Balance />
+      <Activity />
       <PaymentHistoryList payments={mockPayments} />
     </div>
   );
