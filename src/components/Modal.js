@@ -17,9 +17,7 @@ const Modal = ({ open, onClose, children }) => {
         className={classNames('modal__backdrop', { show: open })}
         onClick={onClose}
       />
-      <div className={classNames('modal', { show: open })}>
-        <div className="modal__inner">{children}</div>
-      </div>
+      <div className={classNames('modal', { show: open })}>{children}</div>
     </>
   );
 };
